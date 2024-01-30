@@ -1,4 +1,7 @@
+MANUAL UNDER CONSTRUCTION
 [Go back to the game](https://thedoggybrad.github.io/doom_on_js-dos/)
+
+<img src="android-chrome-192x192.png" width="128px" height="128px">
 
 # DOOM on JS-DOS User Manual
 To Play DOOM on JS-DOS visit https://thedoggybrad.github.io/doom_on_js-dos/ then do the following:<br>
