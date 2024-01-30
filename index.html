@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="Play DOOM via JS-DOS.">
+  <meta name="keywords" content="DOOM,pc,game,javscript">
+  <title>Play DOOM via JS-DOS</title>
+  <meta property="og:title" content='DOOM &middot; js-dos' />
+  <meta property="og:description" content="Play in the DOOM in browser." />
+  <meta property="og:type" content="game" />
+  <meta property="og:url" content="https://thedoggybrad.github.io/doom_on_js-dos/" />
+  <meta property="og:image" content="https://thedoggybrad.github.io/doom_on_js-dos/DOOM.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <script type="text/javascript" src="https://thedoggybrad.github.io/doom_on_js-dos/js-dos-api.js"></script>
+
+
+  <body>
+   
+<style>
+    #DOOM > .dosbox-container { width: 640px; height: 400px; }
+    #DOOM > .dosbox-container > .dosbox-overlay { background: url("https://thedoggybrad.github.io/doom_on_js-dos/DOOM.png"); }
+    #DOOM > .dosbox-container > .dosbox-overlay > .dosbox-start {
+        border-radius: 17px 17px 17px 17px;
+        -moz-border-radius: 17px 17px 17px 17px;
+        -webkit-border-radius: 17px 17px 17px 17px;
+        border: 0px solid #000000;
+        background-color: rgba(90, 90, 90, 0.57);
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+        width: 10em;
+        margin: 0 auto;
+    }
+</style>
+<center>
+<h1>Play DOOM via JS-DOS</h1>
+<footer>©TheDoggyBrad Software Lab. All Rights Reserved.</footer>
+<h3><a href="">User Manual</a></h3>
+<div style="margin-top:20px;" id="DOOM" class="dosbox-default"></div>
+<p><br /><a id="fullscreen_DOOM" href="javascript: void 0;" class="icon-resize-full">Fullscreen</a></p>
+
+<script type="text/javascript">
+  var dosbox_DOOM = new Dosbox({
+    id: "DOOM",
+    onload: function (dosbox) {
+      dosbox_DOOM.run("https://thedoggybrad.github.io/doom_on_js-dos/", "./DOOM/DOOM.EXE");
+    },
+    onrun: function (dosbox, app) {
+      console.log("App '" + app + "' is runned");
+    }
+  });
+
+  document.getElementById("fullscreen_DOOM").addEventListener("click", function() {
+    dosbox_DOOM.requestFullScreen();
+  });
+</script>
+    </center>
+  </body>
+</html>
