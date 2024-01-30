@@ -1,4 +1,4 @@
-MANUAL UNDER CONSTRUCTION
+USER MANUAL UNDER CONSTRUCTION<br>
 [Go back to the game](https://thedoggybrad.github.io/doom_on_js-dos/)
 
 <img src="android-chrome-192x192.png" width="128px" height="128px">
