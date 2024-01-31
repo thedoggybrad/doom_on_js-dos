@@ -8,7 +8,7 @@ Visit https://thedoggybrad.github.io/doom_on_js-dos/ to play!
 
 ## User Manual
 You might want to know on how to play the game first before playing.<br>
-Consider visiting https://thedoggybrad.github.io/doom_on_js-dos/ first before playing.
+Consider visiting https://github.com/thedoggybrad/doom_on_js-dos/blob/main/MANUAL.MD first before playing.
 
 ## License
 This software uses the MIT License. Please visit the link below to view the full license terms.<br>
